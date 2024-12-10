@@ -290,13 +290,21 @@
 
    .flex-item-middle{
     align-items: center;
-
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 65%;
    }
 
    .flex-item-end{
     align-items: flex-end;
     margin-top: 4%;
     cursor: grab;
+   }
+
+   .mh{
+    flex-direction: column;
+    margin-right: 50px;
    }
 
    .hc{
@@ -306,6 +314,22 @@
    .pc{
     color: var(--Strong-cyan);
     cursor: grab;
+   }
+   .ch h1{
+    margin: 0;
+    padding: 0;
+    font-size: medium;
+    color: var(--grayish-blue);
+    padding:10px;
+   }
+
+   .h-1 h1{
+    color: var(--grayish-blue);
+    margin: 0;
+    padding: 0;
+    margin-left: 25px;
+    font-size: medium;
+    margin-left: 120px;
    }
 
    .color-change{
