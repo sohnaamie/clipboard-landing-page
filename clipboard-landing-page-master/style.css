@@ -308,16 +308,20 @@
 
     }
 
-    .h1{
-        text-align: center;
+    .fourth{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #h1{
         color: var(--Dark-grayish-blue);
     }
 
-    .p{
-        text-align: center;
+    #forth-p{
         color: var(--grayish-blue);
-        margin-left: 0%;
-        width: 35%;
+        margin-left: 1200px;
+        margin-top: 5px;
     }
 
    .flex-container{
