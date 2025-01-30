@@ -10,6 +10,12 @@
 
 
 }
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 /* for mobile */
 @media (max-width: 600px) {
     body{
@@ -65,10 +71,10 @@
     .container{
         flex-direction: column;
     }
+ 
 
-
-    .container-image,#img{
-        width: 150%;
+    .container-image{
+        max-width: 55%;
        
     }
 
@@ -77,70 +83,42 @@
      justify-content: center; 
      margin-left: 250px; 
      margin-top: 50px;
+     
     }
-
 
    #p1{
      width: 65%;
     }
 
+    .flex-items{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+
+
+
     .access-h1{
         width: 45%;
         margin-left: 190px;
+        margin-bottom: 2rem;
     }
 
     .access-paragraph #p{
-        width: 35%;
-        margin-left: 65px;
+        margin-left: 55%;
+        margin-top: 1rem;
+        
     }
 
-    .h1{
-        margin-left: 190px;
-        width: 45%;
-    }
+    
 
-    .p{
-        width: 100%;
+    
     }
-
-    .flex-elements{
-        flex-direction: column;
-        width: 60%;
-    }
-
-    .h{
-        width: 45%;
-        margin-left: 90px;
-    }
-
-    .p ,#pa{
-        width: 34%;
-        margin-left: 120px;
-    }
-
-    #but-2{
-        display: grid;
-        margin-left: 150px;
-    }
-
-    .bt1{
-        margin-bottom: 20px;
-    }
-
-    .flex-bag{
-        flex-direction: column;
-        display: grid;
-    }
-
-   
 
     
    
-    
-   
-    }
 
- 
  
 
 .attribution { font-size: 11px; text-align: center; }
@@ -175,6 +153,7 @@
 
     .hero-image{
         padding-top: 25%;
+        margin-bottom: 2rem;
     }
 
 
@@ -187,15 +166,16 @@
         color: var(--grayish-blue);
         width: 65%;
         margin-left: 120px;
+        margin-top: 1rem;
 
     }
 
 
     .hero-button{
         border: none;
-        padding:3% 2%;
-        border-radius: 90px;
-        font-weight: 600; 
+        padding:10px 25px 10px 25px;
+        border-radius: 45px;
+        font-weight: 600px; 
         color: white; 
         font-size: 1rem;
         cursor:grab;
@@ -222,10 +202,10 @@
     .about-section{
         text-align: center;
         height: 75vh;
-        width: 100%;
         margin: 0%;
         padding: 0%;
         height: 100%;
+        margin-top: 4rem;
     }
 
     .about-element{
@@ -240,6 +220,8 @@
 
     .about-paragraph{
         color: var(--grayish-blue);
+        margin-top: 1rem;
+        width: 110%;
     }
 
     .container{
@@ -252,11 +234,12 @@
        
     }
 
-    .container-image{
+    .container-image {
        margin-right: 65%;
        margin-left: -9%;
        width: 5px;
        height: auto;
+       max-width: 25%;
        
     }
 
@@ -264,6 +247,8 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        gap: 1rem;
+        margin-top: 2rem;
         
     }
 
@@ -273,7 +258,9 @@
 
     .container1-p1{
         color: var(--grayish-blue);
-        width: 55%;
+        width: 59%;
+        margin-top: 3px;
+        margin-bottom: 3rem;
     }
 
 
@@ -297,7 +284,7 @@
         color: var(--grayish-blue);
         text-align: center;
         display: inline-block;
-        width: 45%;
+        width: 48%;
         
         
         
@@ -305,30 +292,36 @@
     .access-image{
        height: auto;
        margin-top: 5%;
+       max-width: 25%;
+       margin-left: 150px;
+       align-items: center;
 
     }
 
     .fourth{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        margin-top: 2rem;
+        margin-left: 250px;
+        width: 100%;
+        height: auto;
     }
 
-    #h1{
+    .h1 {
         color: var(--Dark-grayish-blue);
+        margin-left: 200px;
     }
-
-    #forth-p{
+    
+    .p{
         color: var(--grayish-blue);
-        margin-left: 1200px;
-        margin-top: 5px;
+        margin-top: 1.5rem;
+        margin-left: 250px;
     }
+  
 
    .flex-container{
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-    gap: 35px;
+    gap: 70px;
     justify-content: center;
     flex-direction: row;
     margin-top: 45px;
@@ -342,9 +335,9 @@
     align-items: center;
     box-sizing: border-box;
     width: 25%;
-    padding: 15px;
+    padding: 40px;
     justify-content: space-between;
-    gap: 45px;
+    
    
    }
 
@@ -352,26 +345,29 @@
     color: var(--Dark-grayish-blue);
     margin: 0;
     font-size: large;
-    text-align: center;
+    margin-top: 1px;
+    
   
    }
 
    .flex-items p{
     color: var(--grayish-blue);
     font-size:medium;
-    width: 260px;
+    width: 140%;
     word-spacing: 2px;
-    margin-top: 1.2px;
+    margin-top: 25px;
+    text-indent: -5%;
+    
   
    }
 
    .flex-items img{
     margin-bottom: 10px;
     padding-bottom: 20px;
+    max-width: 25%;
    }
 
    .flex-box{
-    flex-direction: column;
     margin-top: 60px;
     
    
@@ -379,49 +375,71 @@
 
    .flex-elements{
     display: flex;
+    flex-direction: row;
     gap: 100px;
     align-items: center;
     padding-left: 40px;
+    max-width: 45%;
+
    }
 
+
+
    .board{
-    text-align: center;
-    margin-top: 10%;
+    margin-top: 5rem;
+    margin-left: 350px;
+    width: 100%;
+    height: auto;
+
    }
+
+
+
    .h{
     color: var(--Dark-grayish-blue);
+    margin-left: 35px;
+   
    }
-   .p{
+
+   .paint{
     color: var(--grayish-blue);
-    width: 125%;
+    width: 600px;
+    margin-top: 20px;
+    text-indent: -30px;
+   
+    
  
    }
 
-
-   #but-2{
-    border: none;
-    padding: 1% 2%;
-    border-radius: 100px;
-    font-weight: 600px; 
-    color: white; 
-    font-size: 1rem;
-    cursor: grab;
-
-   }
+   .am-btn{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    gap: 5px;
+    margin-left: 45px;
    
+   }
 
-   .bt1{
+   .bt-1{
     background-color: var(--Strong-cyan);
-    margin-right: 20px;
-    box-shadow: 4px 4px 2px var(--Strong-cyan);
+    padding: 10px 25px 10px 25px;
+    border: none;
+    border-radius: 45px;
+    color: white;
+    cursor: pointer;
     
 
    }
 
 
-   .bt2{
+   .am-btn .bt-2{
     background-color: var(--light-blue);
-    box-shadow: 4px 4px 2px var(--light-blue);
+    padding: 10px 25px 10px 25px;
+    border: none;
+    border-radius: 45px;
+    color: white;
+    cursor: pointer;
+   
     
    }
 
@@ -438,8 +456,15 @@
 
    .flex-item-start{
     align-items: flex-start;
+    
    }
 
+
+   .flex-item-start img{
+    max-width: 20%;
+    margin-top: 20px;
+    margin-left: 90px;
+   }
 
    .flex-item-middle{
     align-items: center;
@@ -453,6 +478,7 @@
     align-items: flex-end;
     margin-top: 4%;
     cursor: grab;
+    margin-right: 105px;
    }
 
    .mh{
