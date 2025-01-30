@@ -30,9 +30,9 @@
         repeat-y;
     }
 
-    .hero-image{
-        width: 50%;
-        margin-left: 150px;
+    .hero-image img{
+        max-width: 20%;
+        margin-left: 120px;
     }
 
     .hero-h1{
@@ -40,20 +40,24 @@
         white-space: normal;
         text-align: center;
         margin-left: 160px;
-        margin-top: 50px;
     }
 
-    .hero-paragraph{
-        width: 50%;
-        margin-left: 250%;
+    .hero-paragraph p{
+        width: 95%;
+        text-indent: 20px;
+        margin-left: -20px;
+        margin-left: 25px;
+
+        
       
     }
 
 
     .hero-button{
         display: grid;
-        gap: 20px;
+        gap: 10px;
         margin-left: 70px;
+        margin-top: 10px;
     }
 
     .about-h1{
@@ -62,59 +66,133 @@
         width: 85%;
     }
 
-    .about-paragraph{
-        width: 75%;
-        word-spacing: normal;
+    .about-paragraph p{
+        width: 65%;
         margin-left: 100px;
     }
-
+    
     .container{
         flex-direction: column;
+        width: 100%;
+        display: block;
+        overflow: visible;
     }
- 
-
-    .container-image{
-        max-width: 55%;
-       
-    }
-
     .container-elements{
-     flex-direction: column; 
-     justify-content: center; 
-     margin-left: 250px; 
-     margin-top: 50px;
-     
-    }
+        flex-direction: column; 
+        justify-content: center; 
+        margin-left: 250px; 
+        margin-top: 50px;
+        
+       }
+        /*.container-image img{
+        overflow: visible;
+        max-width: 30%;
+        margin-right: 500px;
+        /*max-width: 25%;
+       
+    }*/
 
-   #p1{
-     width: 65%;
-    }
+ 
+       .access-h1{
+           width: 100%;
+           word-wrap: break-word;
+           margin-left: 65px;
+          
+       }
+   
+       .access-h1 .break{
+           display: block;
+       }
+   
+       .access-paragraph p{
+           width: 165px;  
+           margin-left: 45%;
+           margin-top: 20px;
+           
+           
+       }
+   
+       .access-paragraph .bk{
+           text-indent: 5px;
+       }
+   
+       .access-image img{
+           margin-right: 500px;
+           overflow: visible;
+           max-width: 300%;
+       }
 
-    .flex-items{
+       /*fourth*/
+
+       .fourth{
+        align-items: center;
+        margin-right: 500px;
+       }
+
+
+       .h1 {
+        margin-right: 100px;
+        align-items: center;
+
+       }
+       .h1 .subk{
+        display: block;
+
+       }
+
+       .p{
+        margin-right: 95px;
+       }
+
+       .p .prbk{
+        display: block;
+       }
+
+       .flex-container{
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 70px;
+        justify-content: center;
+        margin-top: 45px;
+
+       }
+
+
+       /*#p1{
+        width: 65%;
+       }*/
+   
+       .flex-items{
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        width: 25%;
+        padding: 40px;
+        justify-content: space-between;
+       }
+
+       .flex-items img{
+        max-width: 200%;
+       }
+
+       .flex-elements{
         display: flex;
         flex-direction: column;
-    }
+       }
+ 
 
+   
+}
+
+    
     
 
 
 
-    .access-h1{
-        width: 45%;
-        margin-left: 190px;
-        margin-bottom: 2rem;
-    }
-
-    .access-paragraph #p{
-        margin-left: 55%;
-        margin-top: 1rem;
-        
-    }
-
     
 
     
-    }
+    
 
     
    
@@ -127,6 +205,7 @@
 
       body {
             font-family: 'Bai Jamjuree', sans-serif;
+            width: 100%;
         }
         
     
@@ -323,14 +402,11 @@
     flex-wrap: wrap;
     gap: 70px;
     justify-content: center;
-    flex-direction: row;
     margin-top: 45px;
    
    }
 
    .flex-items{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
@@ -365,6 +441,7 @@
     margin-bottom: 10px;
     padding-bottom: 20px;
     max-width: 25%;
+    margin-left: 45px;
    }
 
    .flex-box{
@@ -415,7 +492,6 @@
     display: flex;
     flex-direction: row;
     margin-top: 1rem;
-    gap: 5px;
     margin-left: 45px;
    
    }
@@ -427,6 +503,7 @@
     border-radius: 45px;
     color: white;
     cursor: pointer;
+
     
 
    }
