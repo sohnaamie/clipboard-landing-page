@@ -188,12 +188,15 @@ body {
 
 .Supercharge-p{
     color: var(--grayish-blue);
+    margin-bottom: 2rem;
 }
 
 .flex-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 4em;
+    gap: 5em;
 }
 
 .flex-container img{
@@ -217,7 +220,7 @@ body {
 }
 
 .flex-box{
-    margin-top: 4em;
+    margin-top: 6em;
 }
 
 .flex-elements{
