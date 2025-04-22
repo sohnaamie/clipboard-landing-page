@@ -16,11 +16,6 @@
 }
 
 
-
-
-
-
-
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -46,6 +41,7 @@ body {
     background-size: cover;
     align-items: center;
     text-align: center;
+    background-position: fixed;
 }
 
 .header-element{
@@ -58,7 +54,7 @@ body {
     max-width: 100%;
     height: auto;
     margin-bottom: 1.5em;
-    margin-top: .5em;
+    margin-top: 0.5em;
 }
 
 .header-h1{
@@ -318,10 +314,185 @@ body {
     margin-bottom: 1em;
 }
 
+/* repsonsiveness for table screen */
+@media(min-width:768px){
+   body{
+    width: 100%;
+    height: 100vh;
+    line-height: 1.5;
+    overflow-x: hidden;
+   } 
+
+   .header-element{
+    display: flex;
+    flex-direction: column;
+
+   }
+
+   .header-h1-break{
+    display: block;
+    line-height: 1.5;
+   }
+
+   .header-p-break{
+    display: block;
+    line-height: 1.5;
+   }
+
+   
+   .header-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+   }
+
+   .track-h1-break{
+    display: block;
+    line-height: 1.5;
+   }
+
+   .track-p-break{
+    display: block;
+    line-height: 1.5;
+
+   }
+
+   .ignore-br{
+    display: none;
+   }
+
+   .container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   }
+
+    .container-elements{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 100%;
+   } 
+
+   .container1-h1{
+    margin-left: 9em;
+    margin-top: 3em;
+
+   }
+   .container1-p1{
+    margin-left: 9em;
+   }
+
+   .p-container-break{
+    display: block;
+   }
+
+   .access-section{
+    margin-top: 7rem;
+    align-items: center;
+   }
+   
+   .clip-break{
+    display: block;
+   }
+
+   .access-image img{
+    margin-top: 4em;
+    margin-right: 40em;
+   }
+
+   .super-break{
+    display: block;
+   }
+
+   .flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15rem;
+    margin-top: 7em;
+   }
+
+   .flex-break{
+    display: block;
+   }
+
+   .flex-box{
+    align-items: center;
+    margin-left: 19em;
+   }
+
+   .flex-elements{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:5em ;
+
+   }
+
+   .board-break{
+    display:block ;
+   }
+
+   .board-btn{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    gap: 1em;
+    margin-left: 19em;
+    margin-bottom: 8em;
+   
+   }
+
+   .flex-bag{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+   
+   }
+
+   .flex-item-start img{
+    max-width: 10%;
+    margin-top: 3em ;
+    margin-bottom: 2.5em;
+    margin-left: 21em;
+   }
+
+   .flex-item-middle{
+    display: flex;
+    flex-direction: column;
+    margin-left: 21em;
+    gap: 1em;
+   }
+
+   .flex-item-end{
+    display: flex;
+    margin-right: 22em;
+   }
+
+   .flex-item-end img{
+    max-width: 4%;
+   }
+
+
+
+   
+
+   
+
+   
+
+
+
+}
+
 
 
     
 
+   
 
 
 
